@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tableau-de-bord">
+
+        <!-- Filtres -->
+        <div class="filtres">
+          <button 
+            *ngFor="let pandemie of pandemiesDisponibles" 
+            [class.selected]="selectedPandemie === pandemie" 
+            (click)="filtrerPandemie(pandemie)">
+            {{ pandemie }}
+          </button>
+          <button 
+            [class.selected]="selectedPandemie === 'all'" 
+            (click)="filtrerPandemie('all')">
+            Toutes les données
+          </button>
+        </div>
+      
+        <!-- Graphique en courbes -->
+        <div class="bloc-chart">
+          <h2>Graphique en courbes – Évolution des cas</h2>
+          <canvas id="chartCourbe"></canvas>
+        </div>
+      
+        <!-- Carte Leaflet -->
+        <div class="bloc-map">
+          <h2>Carte du monde – Code couleur par gravité</h2>
+          <div id="map"></div>
+        </div>
+      
+        <!-- Tableau des stats -->
+        <div class="bloc-table">
+          <h2>Tableau des pandémies – Statistiques clés</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Année</th>
+                <th>Nombre de cas</th>
+                <th>Nombre de décès</th>
+                <th>Taux de Transmission</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let s of stats">
+                <td>{{ s.nom }}</td>
+                <td>{{ s.annee }}</td>
+                <td>{{ s.cas }}</td>
+                <td>{{ s.morts }}</td>
+                <td>{{ s.taux }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      
+        <!-- Graphique en barres -->
+        <div class="bloc-chart">
+          <h2>Vue par mois – Comparaison</h2>
+          <canvas id="chartBarres"></canvas>
+        </div>
+      
+      </div>
+      
+      
+</body>
+</html>

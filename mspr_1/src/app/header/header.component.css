@@ -1,0 +1,32 @@
+/* Styles pour le header */
+header {
+    background-color: #6f867f;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 970px;
+    }
+  
+    nav a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+    }
+
+  }
+
+  .logo_analyse {
+    width: 70px;
+    height: 70px;
+    border-radius: 333px;
+    margin: 10px;
+}

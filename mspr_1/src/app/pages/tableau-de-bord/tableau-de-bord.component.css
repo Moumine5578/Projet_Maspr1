@@ -1,0 +1,97 @@
+.tableau-de-bord {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+  
+  /* Filtres */
+  .filtres {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .filtres button {
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    background-color: #1e1e2f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .filtres button:hover {
+    background-color: #33334d;
+  }
+  
+  .filtres button.selected {
+    background-color: #5a2a82; /* violet foncé */
+  }
+  
+  /* Graphiques */
+  .bloc-chart {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Carte */
+  .bloc-map {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  #map {
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+  }
+  
+  /* Tableau */
+  .bloc-table {
+    margin: 2rem 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 0.8rem 1rem;
+    text-align: center;
+  }
+  
+  thead {
+    background-color: #1e1e2f;
+    color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:hover {
+    background-color: #e6e6e6;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #222;
+  }
+  

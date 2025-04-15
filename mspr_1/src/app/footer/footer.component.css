@@ -1,0 +1,33 @@
+.footer {
+    background-color: #d9d9d9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left {
+    text-align: left;
+  }
+  
+  .footer-right nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-right nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer-right nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
